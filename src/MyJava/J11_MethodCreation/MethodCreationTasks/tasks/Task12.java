@@ -27,9 +27,22 @@ public class Task12 {
     Çıktı : true
     */
 
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lutfen gecerli bir mail adresi tanimlayiniz.");
+        String m=scan.nextLine().toLowerCase();
+
+        mail(m);
+
+    }
+    public static void mail(String m){
+        if (m.contains("@") && m.contains(".") && m.lastIndexOf("@")>0){
+            System.out.println("true");
+        }else System.out.println("false");
 
     }
 
 
-
 }
+
+
+

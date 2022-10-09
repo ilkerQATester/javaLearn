@@ -54,8 +54,5 @@ public class C07_LastIndexOf {
             System.out.println("Girilen cumle 1 tane java iceriyor");
         } else System.out.println("Girilen cumlede birden fazla java var");
 
-
-
-
     }
 }

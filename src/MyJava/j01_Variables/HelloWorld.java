@@ -3,6 +3,8 @@ package j01_Variables;
 public class HelloWorld {
 
     public static void main(String[] args) {
+
+        /*
         System.out.println("merhaba dünya");  //bu komut konsola yazılan metni print eder.
         System.out.println("merhaba dünya");  //bu komut konsola yazılan metni print eder.
         //dan sonra yazılan ifadeler komut veya kod satırı olarak değil yorum olarak tanımlanır.

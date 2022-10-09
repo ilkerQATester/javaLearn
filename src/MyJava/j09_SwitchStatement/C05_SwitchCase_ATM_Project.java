@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class C05_SwitchCase_ATM_Project {
 
     /*
-Bakıye (başlangıç bakıyesi 1000 tl) öğrenme, para yatırma ve cekme, çıkış işlemlerinin yapıldıgı bi ATM app. code create ediniz
- */
+    Bakıye (başlangıç bakıyesi 1000 tl) öğrenme, para yatırma ve cekme, çıkış işlemlerinin yapıldıgı
+    ATM app. code create ediniz
+    */
 
     public static void main(String[] args) {
 

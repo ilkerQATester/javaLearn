@@ -35,7 +35,21 @@ public class _12_method12 {
     public static void main(String[] args) {
 
 
+        Scanner scan = new Scanner(System.in);
+        System.out.print("3'un kuvveti olup olmadığını öğrenmek istediğiniz bir tamsayi giriniz: ");
+        int sayi = scan.nextInt();
+        System.out.println(ucKuvveti(sayi));
+    }
 
+    public static boolean ucKuvveti(int a) {
+        boolean ucUssu = false;
+
+        if (a % 3 == 0 && a>=3 ) {
+            ucUssu = true;
+            return ucUssu;
+        }
+
+        return ucUssu;
     }
 
 

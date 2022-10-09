@@ -1,5 +1,7 @@
 package MyJava.J11_MethodCreation.MethodCreationTasks.tasks;
 
+import java.util.Scanner;
+
 public class Task11 {
 
     public static void main(String[] args) {
@@ -20,9 +22,21 @@ public class Task11 {
 
     İpucu harfleri değiştirin ve ekrana yazdırın.
     */
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Hacker diline çevrilmesini istediğiniz metninizi giriniz: ");
+        String metin = scan.nextLine().toLowerCase();
+        System.out.println("Hacker dili karsiligi: " + hackerDili(metin));
     }
 
-
-
+    public static String hackerDili(String a) {
+        String b = a.replaceAll("s", "5");
+        String c = b.replaceAll("a", "4");
+        String d = c.replaceAll("e", "3");
+        String e = d.replaceAll("i", "1");
+        return e.replaceAll("o", "0");
+    }
 }
+
+
+
+

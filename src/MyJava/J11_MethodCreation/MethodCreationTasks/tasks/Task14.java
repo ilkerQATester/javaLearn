@@ -29,6 +29,31 @@ public class Task14 {
     toplam = 536.0
     */
 
+        System.out.println("***Normal ve fazla mesai calisma icin maas hesaplama programi***");
+        double a = 0;
+        double b = 0;
+        double c = 0;
+        double d = 0;
+        System.out.println("Yevmiyeniz: " + ucretHesapla(a, b, c, d));
+
+    }
+
+    public static double ucretHesapla(double a, double b, double c, double d) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Lutfen mesai baslangic saatinizi giriniz: ");
+        double x = scan.nextDouble();
+        System.out.print("Lutfen mesai bitis saatinizi giriniz: ");
+        double y = scan.nextDouble();
+        System.out.print("Lutfen saatlik ucretinizi tanimlayiniz: ");
+        double z = scan.nextDouble();
+        System.out.print("Lutfen fazla mesai icin maas carpaninizi tanimlayiniz: ");
+        double t = scan.nextDouble();
+
+        if ((y - x) >= 8) {
+            return (8 * z) + ((y - x - 8) * z * t);
+        } else {
+            return (y - x) * z;
+        }
 
     }
 }
