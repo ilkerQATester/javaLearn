@@ -25,7 +25,7 @@ public class C04_WrapperClass {
         int yeniTC= Integer.valueOf(tc);// tc String değerini int cevirdi ve yeniTC'ye atadı
         System.out.println("yeniTC = " + yeniTC);
 
-        int yeniId= Integer.valueOf(id);// tc String değerini int cevirdi ve yeniId'ye atadı
+        int yeniId= Integer.parseInt(id);// tc String değerini int cevirdi ve yeniId'ye atadı
         System.out.println("yeniId = " + yeniId);
 
         System.out.println(yeniId+yeniTC);// aritmetik toplama->1333220
