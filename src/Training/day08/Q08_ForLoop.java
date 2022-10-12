@@ -7,7 +7,7 @@ public class Q08_ForLoop {
     public static void main(String[] args) {
 
         // Kullanicidan iki sayi isteyin.
-        // Girilen sayilar ve aralarindaki tum
+        // Girilen sayilar ve aralarindaki tum sayıların toplamını print eden code create ediniz
 
         Scanner scanner = new Scanner(System.in);
         int sayi1 = scanner.nextInt();
