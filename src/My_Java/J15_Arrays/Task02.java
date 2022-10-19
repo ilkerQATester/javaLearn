@@ -28,6 +28,11 @@ public class Task02 {
         }
         System.out.println("array eleman toplamları : "+arrToplam);
 
+
+       //for (int a:arr) {
+       //    arrToplam += a;
+       //}
+       //System.out.println(arrToplam);
     }
 
 }
