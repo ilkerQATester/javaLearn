@@ -18,6 +18,10 @@ public class C01_MantıksalOperator {
       False  ||    True    -->  True
       False  ||    False   -->  False
  */
+        // && ile & arasindaki fark
+        //&& de boolean sonuc 3 te bir tane false bulunca durur tum satırı kontrol etmeye calısmaz.
+        // Ancak & tum satırı kontrol eder ondan sonra durur.
+        //sonucta fark yok sadece biri ilk hatayı buldugunda durur dığeri sonuna kadar gider.&& tekliye gore daha hizli calisir
 
         //and->ve
 

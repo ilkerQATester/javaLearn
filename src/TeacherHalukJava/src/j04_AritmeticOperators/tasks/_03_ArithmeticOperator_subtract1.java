@@ -1,5 +1,7 @@
 package TeacherHalukJava.src.j04_AritmeticOperators.tasks;
 
+import java.util.Scanner;
+
 public class _03_ArithmeticOperator_subtract1 {
 
     public static void main(String[] args) {

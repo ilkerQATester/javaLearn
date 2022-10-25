@@ -1,5 +1,7 @@
 package TeacherHalukJava.src.j04_AritmeticOperators.tasks;
 
+import java.util.Scanner;
+
 public class _06_ArithmeticOperator_division1 {
 
     public static void main(String[] args) {

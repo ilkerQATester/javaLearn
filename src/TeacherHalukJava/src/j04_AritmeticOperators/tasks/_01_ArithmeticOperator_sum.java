@@ -1,5 +1,7 @@
 package TeacherHalukJava.src.j04_AritmeticOperators.tasks;
 
+import java.util.Scanner;
+
 public class _01_ArithmeticOperator_sum {
     public static void main(String[] args) {
 

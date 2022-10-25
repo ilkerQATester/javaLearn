@@ -21,6 +21,10 @@ public class C03_Student {
         System.out.println("agam fiziksel zindelik= zihisel zindelik . koş babam koş");
     }
 
+
+
+
+
     @Override
     public String toString() {//obj referans değeri print etmemesi için obj datalarını  stringe ceviren method
         return "{" +
@@ -31,4 +35,34 @@ public class C03_Student {
                 ", okulNo=" + okulNo +
                 '}';
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

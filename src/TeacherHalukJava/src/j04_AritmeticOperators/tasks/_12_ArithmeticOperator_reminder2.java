@@ -1,5 +1,7 @@
 package TeacherHalukJava.src.j04_AritmeticOperators.tasks;
 
+import java.util.Scanner;
+
 public class _12_ArithmeticOperator_reminder2 {
 
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package TeacherHalukJava.src.j04_AritmeticOperators.tasks;
 
+import java.util.Scanner;
+
 public class _10_Arithmetic_Operator_multiply3 {
 
     public static void main(String[] args) {

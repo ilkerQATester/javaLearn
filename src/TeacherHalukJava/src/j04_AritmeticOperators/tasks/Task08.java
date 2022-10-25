@@ -1,5 +1,7 @@
 package TeacherHalukJava.src.j04_AritmeticOperators.tasks;
 
+import java.util.Scanner;
+
 public class Task08 {
     /*
      * Saniyeyi saat, dk ve saniyeye çeviren bir program yazınız.
