@@ -13,18 +13,15 @@ public class C03_Student {
 
     public void mezuniyet(){//method
         if (ortalama >=50) {
-            System.out.println("agam diploman hayırlı nolsun :)");
-        }else System.out.println("agam seneye de bekleriz dewamkeee :(");
+            System.out.println(" diploman hayırlı olsun :)");
+        }else System.out.println("seneye de bekleriz :(");
     }
-    public  void sosyalFaailyet(){
+    public static void sosyalFaailyet(){
 
-        System.out.println("agam fiziksel zindelik= zihisel zindelik . koş babam koş");
+        System.out.println(" fiziksel zindelik= zihisel zindelik . koş babam koş");
     }
 
-
-
-
-
+/*
     @Override
     public String toString() {//obj referans değeri print etmemesi için obj datalarını  stringe ceviren method
         return "{" +
@@ -36,7 +33,7 @@ public class C03_Student {
                 '}';
     }
 
-
+*/
 
 
 
