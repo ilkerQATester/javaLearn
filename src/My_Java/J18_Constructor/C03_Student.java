@@ -21,6 +21,29 @@ public class C03_Student {
         System.out.println(" fiziksel zindelik= zihisel zindelik . koş babam koş");
     }
 
+    public C03_Student() {
+    }
+
+    public C03_Student(String ad, String soyad, int sınıf, double ortalama, int okulNo, boolean takdir) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.sınıf = sınıf;
+        this.ortalama = ortalama;
+        this.okulNo = okulNo;
+        this.takdir = takdir;
+    }
+
+    @Override
+    public String toString() {
+        return "C03_Student{" +
+                "ad='" + ad + '\'' +
+                ", soyad='" + soyad + '\'' +
+                ", sınıf=" + sınıf +
+                ", ortalama=" + ortalama +
+                ", okulNo=" + okulNo +
+                ", takdir=" + takdir +
+                '}';
+    }
 /*
     @Override
     public String toString() {//obj referans değeri print etmemesi için obj datalarını  stringe ceviren method
