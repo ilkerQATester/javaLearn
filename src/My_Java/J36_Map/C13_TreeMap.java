@@ -49,5 +49,13 @@ public class C13_TreeMap {
         System.out.println("tm.ceilingKey(1) = " + tm.ceilingKey(1));//101-> 1'den buyuk en kucuk key 101
         System.out.println("tm.ceilingKey(110) = " + tm.ceilingKey(110));//null -> 110 dan b uyuk en kucuk key yok
 
+        //ascending order-> artan sıralama
+        //descending order-> azalan sıralama
+        System.out.println("tm.descendingKeySet() = " + tm.descendingKeySet());//[107, 106, 105, 104, 103, 102, 101]
+        System.out.println("tm.keySet() = " + tm.keySet());//[101, 102, 103, 104, 105, 106, 107]
+        System.out.println("tm.firstKey() = " + tm.firstKey());//101
+        System.out.println("tm.lastKey() = " + tm.lastKey());//107
+
+
     }
 }
