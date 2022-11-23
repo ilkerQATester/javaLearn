@@ -39,7 +39,7 @@
      * 			 "getter" methodlarımızı oluşturalım.
      *
      * 3. Adım : Kutuları ekleyebilmek, ve kutular üzerinde işlemler yapabilmek için Kutular classı oluşturulım
-     * 			 Oluşturduğumuz tüm Kutu nesnelerini Kutular a ekleyelim.
+     * 			 Oluşturduğumuz tüm Kutu nesnelerini Kutular Training.day14.UçuşTarifesi ekleyelim.
      * 			 Bunun için Kutular class'ı içerisinde çeşitli methodlar oluşturalım.
      * 			 Ayrıca yapımcinin teklifini de bu class içerisinden alalım.
      *

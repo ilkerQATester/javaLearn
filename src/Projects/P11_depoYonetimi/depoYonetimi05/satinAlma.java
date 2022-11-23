@@ -5,8 +5,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi05.Variables.scan;
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi05.Variables.urunlerMap;
+import static Projects.P11_depoYonetimi.depoYonetimi05.Variables.scan;
+import static Projects.P11_depoYonetimi.depoYonetimi05.Variables.urunlerMap;
 
 public class satinAlma implements Interface_Alıs {
     public void urunGirisi() {

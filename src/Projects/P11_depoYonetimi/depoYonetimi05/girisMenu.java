@@ -1,6 +1,6 @@
 package Projects.P11_depoYonetimi.depoYonetimi05;
 
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi05.Variables.scan;
+import static Projects.P11_depoYonetimi.depoYonetimi05.Variables.scan;
 
 public class girisMenu {
     public void giris() {

@@ -2,7 +2,8 @@ package Projects.P11_depoYonetimi.depoYonetimi04;
 
 import java.util.ArrayList;
 
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi04.Islemler.scan;
+import static Projects.P11_depoYonetimi.depoYonetimi04.Islemler.scan;
+
 
 public class Depo implements Satis, SatinAlma, UrunTanimlama {
     public static final String W = "\u001B[37m";
