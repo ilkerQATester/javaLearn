@@ -1,10 +1,10 @@
 package Projects.P11_depoYonetimi.depoYonetimi06;
 
-public class Main extends Method {
+public class Main {
     public static void main(String[] args) {
 
 
-        Main depoCalis = new Main();
+        Method depoCalis = new Method();
         depoCalis.girisPaneli();
     }
 }

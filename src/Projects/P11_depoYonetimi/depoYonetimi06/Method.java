@@ -81,8 +81,11 @@ public class Method implements GirisCikisInterface {
         System.out.println("Uretici firma");
         String uretici=scan.nextLine();
         System.out.println("Birim");
-        String birim=scan.nextLine();
-        UrunTanimlama urun=new UrunTanimlama(id,urunIsmi,uretici,birim);
+        String birim=scan.next();
+        /*System.out.println("Raf bilgisi giriniz");
+        String raf=scan.next();*/
+
+        UrunTanimlama urun=new UrunTanimlama(id, urunIsmi, uretici,birim);
         urunler.put(id,urun);
         id++;
 
@@ -102,28 +105,29 @@ public class Method implements GirisCikisInterface {
 
     }
     public static void miktarGuncelle() {
+
         System.out.println("Urun girisi icin Id bilgisi giriniz");
 
-        int arananId=scan.nextInt();
+            int arananId=scan.nextInt();
 
-        if(Character.isDigit(arananId)){
-            if(urunler.keySet().contains(arananId)) {
+            if(urunler.containsKey(arananId)) {
 
                 System.out.println("Guncel miktarinizi giriniz");
                 int guncelMik = scan.nextInt();
-                urunler.get(arananId).setMiktar(guncelMik + urunler.get(arananId).getMiktar());
-
-            }else{
-                System.out.println("aradiniz urun yok");
+                urunler.get(arananId).setMiktar(guncelMik);
             }
-        }}
-
+            else
+            {
+                System.out.println("Aradığınız ID bulunamadı");
+                miktarGuncelle();
+            }
+    }
 
     private static void rafaKoy() {
         System.out.println("Raf girisi icin Id bilgisi giriniz");
         int arananId= scan.nextInt();
 
-        if(urunler.keySet().contains(arananId)) {
+        if(urunler.containsKey(arananId)) {
 
             System.out.println("Guncel raf giriniz");
             scan.nextLine();
@@ -139,11 +143,17 @@ public class Method implements GirisCikisInterface {
         System.out.println("Urun cikisi icin Id bilgisi giriniz");
         int arananId= scan.nextInt();
 
-        if(urunler.keySet().contains(arananId)) {
+        if(urunler.containsKey(arananId)) {
 
-            System.out.println("Guncel miktarinizi giriniz");
+            System.out.println("çıkış yapılacak ürün miktarını giriniz :");
             int guncelMik = scan.nextInt();
+            if(urunler.get(arananId).getMiktar()>=guncelMik)
             urunler.get(arananId).setMiktar(urunler.get(arananId).getMiktar()-guncelMik);
+
+            else{
+                System.out.println("Mevcut miktardan fazla miktar çıkışı yapılamaz ");
+                urunCikis();
+            }
 
         }else{
             System.out.println("aradiniz urun yok");

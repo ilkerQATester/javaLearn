@@ -16,6 +16,7 @@ public class UrunTanimlama {
         this.urunIsmi = urunIsmi;
         this.uretici = uretici;
         this.birim = birim;
+
     }
 
 
