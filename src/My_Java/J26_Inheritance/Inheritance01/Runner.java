@@ -1,5 +1,4 @@
 package My_Java.J26_Inheritance.Inheritance01;
-
 public class Runner {
     /*
 	 1)Java'da class'lar arasinda parent(Aile)-child(Cocuk)  relationship(iliski) tanımlanmıştır.
@@ -58,5 +57,7 @@ public class Runner {
         ky.içme();
         ky.dogum();
         ky.sutBeslenme();
+
+
     }
 }

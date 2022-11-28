@@ -1,4 +1,4 @@
-package İnterviewQuestions;
+package İnterviewQuestions_Java;
 
 import java.util.Arrays;
 import java.util.Scanner;

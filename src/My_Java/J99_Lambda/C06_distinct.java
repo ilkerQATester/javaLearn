@@ -20,6 +20,7 @@ public class C06_distinct {
         System.out.println("\n   ***   ");
         sonHrfTrsPrint( menu);//
         System.out.println("\n   ***   ");
+        charKaresiCiftElSirala( menu);
         System.out.println("\n   ***   ");
 
 
@@ -72,4 +73,13 @@ public class C06_distinct {
     }
     // Task : listin elemanlarin karakterlerinin cift sayili  karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
 
+    public static void charKaresiCiftElSirala(List<String> menu) {
+        menu.
+                stream().//akısa alndı
+                map(t -> t.length() * t.length()).//akısdaki string elemanları boyutlarının karesine update edildi
+                filter(C01_LambdaExpression::ciftMi).//cift elelmalar filtrelendi
+                distinct().//tekrarsız yapıldı
+                sorted(Comparator.reverseOrder()).//ters b->k sıra yapıldı
+                forEach(C01_LambdaExpression::yazdir);// print edildi
+    }
 }

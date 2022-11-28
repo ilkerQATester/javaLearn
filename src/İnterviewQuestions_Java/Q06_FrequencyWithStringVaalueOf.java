@@ -1,4 +1,4 @@
-package İnterviewQuestions;
+package İnterviewQuestions_Java;
 
 public class Q06_FrequencyWithStringVaalueOf {
     /*
