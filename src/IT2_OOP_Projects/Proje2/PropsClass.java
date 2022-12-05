@@ -1,4 +1,4 @@
-package OOP_inharitance.Proje2;
+package IT2_OOP_Projects.Proje2;
 import java.io.*;
 import java.util.*;
 

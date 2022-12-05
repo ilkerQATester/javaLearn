@@ -1,4 +1,4 @@
-package OOP_inharitance.tasit;
+package IT2_OOP_Projects.inheritance.tasit;
 
 public class kamyonet extends tasit{
 

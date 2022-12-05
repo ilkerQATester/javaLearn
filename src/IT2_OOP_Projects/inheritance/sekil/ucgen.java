@@ -1,4 +1,4 @@
-package OOP_inharitance.sekil;
+package IT2_OOP_Projects.inheritance.sekil;
 
 public class ucgen extends sekil {
 
