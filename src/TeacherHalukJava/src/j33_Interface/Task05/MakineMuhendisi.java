@@ -5,7 +5,7 @@ public class MakineMuhendisi implements IMuhendis {
     private boolean askerlik;
     private boolean adliSicil;
 
-    public MakineMuhendisi(boolean askerlik, boolean adliSicil) {//
+    public MakineMuhendisi(boolean askerlik, boolean adliSicil) {
         this.askerlik = askerlik;
         this.adliSicil = adliSicil;
     }

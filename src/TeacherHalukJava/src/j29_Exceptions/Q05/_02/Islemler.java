@@ -1,8 +1,8 @@
 package TeacherHalukJava.src.j29_Exceptions.Q05._02;
 
 
-import static TeacherHalukJava.src1.src.j29_Exceptions.Q05._02.Account.accountList;
-import static TeacherHalukJava.src1.src.j29_Exceptions.Q05._02.Account.scan;
+import static j29_Exceptions.Q05._02.Account.accountList;
+import static j29_Exceptions.Q05._02.Account.scan;
 
 public class Islemler {
     Islemler(){

@@ -1,5 +1,8 @@
 package TeacherHalukJava.src.j29_Exceptions;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Task02 {
     public static void main(String[] args) {
          /*
@@ -24,12 +27,27 @@ public class Task02 {
      */
 
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Hava sıcaklığı = ");
+        int sicaklik = sc.nextInt();
+
+        try {
+            SicaklikKontrol(sicaklik);
+        } catch (IOException ex) {
+            System.out.println("ex = " + ex);
+        }
+        System.out.println("agam sorun handle edildi DEWAMKEEE :)");//bu kod çalışmıssa pr sorunsuz kırılmadan run olmuştur
+    }//main sonu...
 
 
+    public static void SicaklikKontrol(int sicaklik) throws IOException {
 
-    }// main sonu
 
-
+        if (sicaklik < 10) {
+            throw new IOException("Hava Gerçekten soğuk dışarı çıkma");
+        }
+        System.out.println("Dışarıda basketbol oynayabilirsin");
+    }
 
 
 }

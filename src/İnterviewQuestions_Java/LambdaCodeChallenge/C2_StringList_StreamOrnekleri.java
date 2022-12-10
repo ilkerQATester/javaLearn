@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class C2_StringList_StreamOrnekleri {
-
     public static void main(String[] args) {
         List<String> list=new ArrayList<>();
+
         list.add("Java");
         list.add("ogrenmek");
         list.add("cok");
@@ -19,6 +19,8 @@ public class C2_StringList_StreamOrnekleri {
         list.add("Cok");
         list.add("Eglenceli");
         list.add("Oldu");
+
+
     }
     // S1: ilk harfi d ve ya c olanlari listeleyelim *** filter-startsWith()
     //S2: tum stringlerin basina ve sonuna yildiz ekleyerek yazdiralim *** map(t-> "*" + t + "*")
@@ -31,4 +33,9 @@ public class C2_StringList_StreamOrnekleri {
     //   ***map(t-< t.substring(0,1).toUpperCase() + t.substring(1).toLowerCase() forEach
     // S8: uzunlugu 4 ve 6 olanlar haric bir liste olusturunuz
     // ***filter(x-> x.length () !=4 && x.length () !=6)  collect
+
+
+
+
+
 }

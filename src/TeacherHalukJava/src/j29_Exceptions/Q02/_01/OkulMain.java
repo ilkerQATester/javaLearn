@@ -2,8 +2,8 @@ package TeacherHalukJava.src.j29_Exceptions.Q02._01;
 
 import java.util.Scanner;
 
-import static TeacherHalukJava.src1.src.j29_Exceptions.Q02._01.Ogrenci.ogrenciList;
-import static TeacherHalukJava.src1.src.j29_Exceptions.Q02._01.Okul.okulList;
+import static j29_Exceptions.Q02._01.Ogrenci.ogrenciList;
+import static j29_Exceptions.Q02._01.Okul.okulList;
 
 
 public class OkulMain {

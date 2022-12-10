@@ -3,7 +3,8 @@ package TeacherHalukJava.src.j29_Exceptions.Q05._02;
 import java.util.Random;
 import java.util.Scanner;
 
-import static TeacherHalukJava.src1.src.j29_Exceptions.Q05._02.Account.accountList;
+import static j29_Exceptions.Q05._02.Account.accountList;
+
 
 public class MusteriEkle {
     MusteriEkle() {

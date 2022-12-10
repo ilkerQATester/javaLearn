@@ -2,7 +2,7 @@ package TeacherHalukJava.src.j33_Interface.Task03;
 
 public interface IMuhendis {
 
-    void askerlik_durumu_sorgula();//abs meth-> child impl
+    void askerlik_durumu_sorgula();
 
     String mezuniyet_ortalamasi(double derece);
 

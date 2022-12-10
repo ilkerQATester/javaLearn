@@ -1,6 +1,6 @@
 package TeacherHalukJava.src.j33_Interface;
 
-import static TeacherHalukJava.src1.src.j33_Interface.Lastik.RENK;
+import static j33_Interface.Lastik.RENK;
 
 public class Runner {
     public static void main(String[] args) {

@@ -10,7 +10,19 @@ public class Task04 {
 
 		
 		
-
+		int i = 999;
+		
+		int counter = 0;//flag
+		
+		while(i>=100) {
+			if(i%4==0 && i%6==0) {
+				System.out.print(i+ " ");
+				counter ++;
+			}
+			i--;
+		}
+		System.out.println();
+		System.out.println("4 ve 6'ya bolunen 3 basamakli " + counter + " tane sayi vardir ");
 		
 		
 			

@@ -9,7 +9,17 @@ public class Task13 {
         do-while lopp
          */
 
-      
 
+        Scanner oku = new Scanner(System.in);
+        String okunan = "";
+
+        do {
+            okunan = oku.nextLine();
+            if (okunan.equalsIgnoreCase("x")) break; // break : döngü kırıcı
+
+            System.out.println("Program çalışıyor");
+        } while (!okunan.equalsIgnoreCase("x"));
+
+        System.out.println("Program bitti.");
     }
 }

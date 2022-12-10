@@ -12,7 +12,36 @@ public class Task05 {
 		 */
 		
 			
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Ilk isminizi giriniz");
+		char ilkHarf = scan.nextLine().toUpperCase().charAt(0);
+		
+		
+		
+		System.out.println("Soy isminizi giriniz");
+		String soy = scan.nextLine().toUpperCase();
+		
+		
+		char sonHarf = soy.charAt(soy.length()-1);
+		if(ilkHarf<=sonHarf) {
+			
+			while(ilkHarf<=sonHarf) {
+				System.out.print(ilkHarf + " ");
+				ilkHarf++;
+			}
+			
+		}else {
+			
+			while(sonHarf<=ilkHarf) {
+				System.out.print(sonHarf + " ");
+				sonHarf++;
+			}		
+		}
+		scan.close();
 
+			
+			
+			scan.close();
 	}
 
 }
