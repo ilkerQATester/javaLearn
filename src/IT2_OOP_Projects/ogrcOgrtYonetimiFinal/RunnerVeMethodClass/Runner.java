@@ -1,11 +1,11 @@
-package Projects.P04_okulYönetimi.ogrcOgrtYonetimi.ogrcOgrtYonetimi02;
+package IT2_OOP_Projects.ogrcOgrtYonetimiFinal.RunnerVeMethodClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Runner extends MethodClass{
+public class Runner extends MethodClass {
     public static void main(String[] args) {
-        String dosyaYolu = "src/Projects/P04_okulYönetimi/ogrcOgrtYonetimi/ogrcOgrtYonetimi02/Task.txt";
+        String dosyaYolu = "C:\\Users\\İLKER\\IdeaProjects\\javaLearn\\src\\IT2_OOP_Projects\\ogrcOgrtYonetimiFinal\\Task.txt";
         try {
             FileInputStream fis=new FileInputStream(dosyaYolu);
             int k =0;
