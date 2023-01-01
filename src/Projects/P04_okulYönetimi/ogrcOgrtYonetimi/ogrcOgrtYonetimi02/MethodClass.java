@@ -12,7 +12,7 @@ public class MethodClass extends Kisi{
     List<Kisi> ogrenci = new ArrayList<>();
     static String kisi;
     public  void ekleme() {//try catch calis{
-        System.out.println("****** " + kisi + " ekleme sayfasina hosgelmissen" + "*********");
+        System.out.println("****** " + kisi + " ekleme sayfasina hosgeldiniz" + "*********");
         scan.nextLine();//dummy
         System.out.println("isim gir");
         String adSoyad = scan.nextLine();
@@ -21,7 +21,7 @@ public class MethodClass extends Kisi{
         try {//1
             String kimlikNo = scan.nextLine();
             kimlikNo = kimlikNo.replace(" ", "");//bosluklu girerse diye
-            if (kimlikNo.length() != 5) {//2
+            if (kimlikNo.length() != 11) {//2
                 throw new StringIndexOutOfBoundsException("Hatali veya eksik tuslama yaptiniz");
             } else {//2
                 if (kisi.equalsIgnoreCase("Ogrenci")) {//3
