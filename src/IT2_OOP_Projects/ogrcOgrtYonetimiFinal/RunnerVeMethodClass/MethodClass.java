@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MethodClass extends Kisi {
+public class MethodClass extends Kisi { //inheritance
     static Scanner scan = new Scanner(System.in);
     String branslar[] = {"Kimya", "Fizik", "Biyoloji", "Matematik", "Geometri"};
     //String siniflar[] = {"11A", "11B", "12A", "12B", "10A", "10B", "9A", "9B", "8A", "8B", "7A", "7B", "6A", "5A", "4A", "3A", "2A", "1A"};
@@ -25,7 +25,7 @@ public class MethodClass extends Kisi {
         try {//1
             String kimlikNo = scan.nextLine();
             kimlikNo = kimlikNo.replace(" ", "");//bosluklu girerse diye
-            if (kimlikNo.length() != 11) {//2
+            if (kimlikNo.length() != 11) {//2. 11 haneli girilmezse
                 throw new StringIndexOutOfBoundsException("Kimlik no 11 haneli olmalıdır");
             }
             else {//2
@@ -85,7 +85,7 @@ public class MethodClass extends Kisi {
                                         String sicilKontrol=sicilNo;//
                                         sicilKontrol=sicilKontrol.replaceAll("\\d","");//rakamlar silindi
                                         if(sicilKontrol.length()==1 && sicilNo.length()==6){// tek harf varsa ve harften sonra 5 rakam varsa
-                                            Ogretmen obj2 = new Ogretmen(adSoyad, kimlikNo, yas, brans, sicilNo);
+                                            Ogretmen obj2 = new Ogretmen(adSoyad, kimlikNo, yas, brans, sicilNo); // constructer
                                             ogretmen.add(obj2);
                                             System.out.println("eklenen ogretmen : "+obj2.getAdSoyad());
                                         }else{
@@ -126,7 +126,7 @@ public class MethodClass extends Kisi {
             }
         } else {
 
-            boolean flag = true;//true aldik arasi calisir ve flag false olur.  Eger ogrenci yoksa  calisir
+            boolean flag = true;//true alınca burasi calisir ve flag false olur.  Eger ogrenci yoksa  calisir
             for (Kisi tc1 : ogretmen) {
                 if (tc.equals(tc1.getKimlikNo())) {
                     System.out.println(tc1.toString());//alinan tc li ogretmeni geitirir

@@ -3,7 +3,7 @@ package IT2_OOP_Projects.ogrcOgrtYonetimiFinal.RunnerVeMethodClass;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Runner extends MethodClass {
+public class Runner extends MethodClass { //inheritance
     public static void main(String[] args) {
         String dosyaYolu = "C:\\Users\\İLKER\\IdeaProjects\\javaLearn\\src\\IT2_OOP_Projects\\ogrcOgrtYonetimiFinal\\Task.txt";
         try {
@@ -76,7 +76,7 @@ public class Runner extends MethodClass {
                 Runner obj = new Runner();
                 break;
             default:
-                System.out.println("hacim yanlis tusa bastin tekrar deneyin");
+                System.out.println("geçerli giriş yapılmadı tekrar deneyin");
                 altMenu();
         }
 

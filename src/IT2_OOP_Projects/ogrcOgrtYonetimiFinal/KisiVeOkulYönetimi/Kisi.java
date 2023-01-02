@@ -1,14 +1,14 @@
 package IT2_OOP_Projects.ogrcOgrtYonetimiFinal.KisiVeOkulYönetimi;
 
-public abstract class Kisi implements OkulYonetimi {
+public abstract class Kisi implements OkulYonetimi { // abstraction and implementation
 
-    private  String adSoyad;
+    private  String adSoyad; //access modifiers
     private String kimlikNo;
     private int yas;
     public Kisi(){
 
     }
-    public Kisi(String adSoyad, String kimlikNo, int yas) {
+    public Kisi(String adSoyad, String kimlikNo, int yas) { // construction
         this.adSoyad = adSoyad;
         this.kimlikNo = kimlikNo;
         this.yas = yas;
@@ -16,7 +16,7 @@ public abstract class Kisi implements OkulYonetimi {
 
     public String getAdSoyad() {
         return adSoyad;
-    }
+    } //encapsulations
 
     public void setAdSoyad(String adSoyad) {
         this.adSoyad = adSoyad;
@@ -39,7 +39,7 @@ public abstract class Kisi implements OkulYonetimi {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //Override
         return "" +
                 "adSoyad='" + adSoyad + '\'' +
                 ", kimlikNo='" + kimlikNo + '\'' +
@@ -47,7 +47,7 @@ public abstract class Kisi implements OkulYonetimi {
     }
 
     @Override
-    public void ekleme() {
+    public void ekleme() { //Override
 
     }
 
