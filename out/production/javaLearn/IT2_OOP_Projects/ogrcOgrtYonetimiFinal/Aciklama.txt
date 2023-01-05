@@ -12,12 +12,14 @@
 
    * olasi hatalar try/catch bloklari ile kontrol edildi
    * ekleme methoduna kimlik no try/catch de baglandi
+
    * yas try/catch ile kimlik no ya baglandi yas kontrol icin belli araliklar
-
    * alindi yani negatif girme durumu kontrol edildi
-   * brans try/catch ile yas Training.day14.UçuşTarifesi baglandi
-   * sicil no harf ve rakamlardan olusmasi gerketigi icin ve kontrol edildi
 
+   * sicil no harf ve rakamlardan olusmasi gerketigi icin ve kontrol edildi
    * nested try/catch mantigi ile ekleme methodu calisildi
+
    * girilen bilgilerin hepsi dogru oldugunda olusturulan listeye eklendi
    * interface  ile to do list olusturulup Kisi class ina implement yapildi
+
+   *Docx olarak hangi class ta neler yapıldığının şeması oluşturuldu.

@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Runner extends MethodClass{
     public static void main(String[] args) {
-        String dosyaYolu = "src/Projects/P04_okulYönetimi/ogrcOgrtYonetimi/ogrcOgrtYonetimi02/Task.txt";
+        String dosyaYolu = "src/Projects/P04_okulYönetimi/ogrcOgrtYonetimi/ogrcOgrtYonetimi02/Aciklama.txt";
         try {
             FileInputStream fis=new FileInputStream(dosyaYolu);
             int k =0;

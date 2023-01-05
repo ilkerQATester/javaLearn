@@ -31,7 +31,7 @@ public class MethodClass extends Kisi { //inheritance
             else {//2
                 if (kisi.equalsIgnoreCase("Ogrenci")) {//3
                     System.out.println("yas gir");
-                    // int yas = 0; // 30. satira int tanimladigimizda bu satira gerek kalmadi
+
                     try {//4
                         int yas = scan.nextInt();
                         scan.nextLine();//dummy
@@ -117,7 +117,7 @@ public class MethodClass extends Kisi { //inheritance
             boolean flag = true;//true aldik 110 115 arasi calisir ve flag false olur eger ogrenci yoksa 117 calisir
             for (Kisi tc1 : ogrenci) {
                 if (tc.equals(tc1.getKimlikNo())) {
-                    System.out.println(tc1.toString());//alinan tc li ogrenciyi geitirir
+                    System.out.println(tc1.toString());//alinan tc li ogrenciyi getirir
                     flag = false;
                 }
             }
@@ -150,7 +150,7 @@ public class MethodClass extends Kisi { //inheritance
                     System.out.println("silinen ogrenci : " + sil.getAdSoyad());
                     ogrenci.remove(sil);
                     flag = false;
-                    break;// bu break olmazsa .ConcurrentModificationException hatasi veriyuor foreach calismaya  devam ediyr
+                    break;// bu break olmazsa .ConcurrentModificationException hatasi veriyor foreach calismaya  devam ediyr
                 }
             }
             if (flag) {

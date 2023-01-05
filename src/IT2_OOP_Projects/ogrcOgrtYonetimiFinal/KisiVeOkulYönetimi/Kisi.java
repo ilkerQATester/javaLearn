@@ -8,7 +8,7 @@ public abstract class Kisi implements OkulYonetimi { // abstraction and implemen
     public Kisi(){
 
     }
-    public Kisi(String adSoyad, String kimlikNo, int yas) { // construction
+    public Kisi(String adSoyad, String kimlikNo, int yas) { // constructer
         this.adSoyad = adSoyad;
         this.kimlikNo = kimlikNo;
         this.yas = yas;

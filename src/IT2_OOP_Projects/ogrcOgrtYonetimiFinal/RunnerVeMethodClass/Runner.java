@@ -1,15 +1,15 @@
 package IT2_OOP_Projects.ogrcOgrtYonetimiFinal.RunnerVeMethodClass;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
+import java.util.Scanner;
 
 public class Runner extends MethodClass { //inheritance
     public static void main(String[] args) {
-        String dosyaYolu = "C:\\Users\\İLKER\\IdeaProjects\\javaLearn\\src\\IT2_OOP_Projects\\ogrcOgrtYonetimiFinal\\Task.txt";
+        String aciklamaDosya = "C:\\Users\\İLKER\\IdeaProjects\\javaLearn\\src\\IT2_OOP_Projects\\ogrcOgrtYonetimiFinal\\Aciklama.txt";
         try {
-            FileInputStream fis=new FileInputStream(dosyaYolu);
+            FileInputStream fileinStrm=new FileInputStream(aciklamaDosya);
             int k =0;
-            while((k=fis.read())!=-1){
+            while((k=fileinStrm.read())!=-1){
                 System.out.print((char)k);
             }
         } catch (IOException e) {
@@ -85,17 +85,32 @@ public class Runner extends MethodClass { //inheritance
 
 
     public void cikis() {
-        System.out.println("hoscakalin yine bekleriz");
-
-        String dosyaYolu = "src/okul_Proje/yeniTask";
+        Scanner scan= new Scanner(System.in);
+        BufferedWriter yazma;
         try {
-            FileInputStream fis = new FileInputStream(dosyaYolu);
-            int k = 0;
-            while ((k = fis.read()) != -1) {
-                System.out.print((char) k);
+            yazma = new BufferedWriter(new FileWriter("C:\\Users\\İLKER\\IdeaProjects\\javaLearn\\src\\IT2_OOP_Projects\\ogrcOgrtYonetimiFinal\\gorusDosyası.txt"));
+            System.out.println("****** "+" Görüşleriniz Bizim için Değerli" + "*********");
+
+            System.out.println("Lütfen projeyle ilgili görüşlerinizi kısaca yazınız");
+            String gorus = scan.nextLine();
+            yazma.write(gorus);
+            yazma.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        BufferedReader okuma;
+        try {
+            okuma = new BufferedReader(new FileReader("C:\\Users\\İLKER\\IdeaProjects\\javaLearn\\src\\IT2_OOP_Projects\\ogrcOgrtYonetimiFinal\\gorusDosyası.txt"));
+            String satir;
+            while((satir=okuma.readLine()) != null)
+            {
+                System.out.println(satir + "\n görüşünüz başarıyla eklendi");
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("Hoscakalin yine bekleriz");
     }
 }
